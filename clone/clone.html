@@ -1,0 +1,516 @@
+<html>
+<head>
+    <title>Real Estate Company Web
+    </title>
+    <style>
+        .navbar{
+            background-color: white;
+            height:84px;
+            
+        }
+        body{
+            margin: 0;
+            padding:0;
+            font-family:"open sans", sans-serif;
+            background-image:url("back1.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .navs{
+            margin= 10px;
+        }
+        #logo{
+            position:relative;
+            top:25px;
+            left:232px;
+            float:left;
+        }
+        .options a:link {
+            color:#283B62;
+            text-decoration: none;
+        }
+        .options a:hover {
+            color:#8E99B1;
+        }
+        .options a:active {
+            color:#CBB492;
+        }
+        .options li{
+            list-style-type: none;
+            float:left;
+            position:relative;
+            left:528px;
+            top:34px;
+            margin-right: 88px;
+            font-size:13px;
+        }
+        .phone{
+            background-color: #2F3F60;
+            color:white;
+            width:210px;
+            height:58px;
+            position:absolute;
+            top:84px;
+            left:940px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .phone img{
+            float:left;
+            margin-top: 20px;
+            margin-left: 20px;
+            
+        }
+        .phone p{
+            margin-top: 23px;
+            padding-left:50px;
+        }
+        .overlap_box{
+            background-color:rgba(51,68,101,0.85);
+            height:490px;
+            width:350px;
+            position:absolute;
+            top:390px;
+            left:205px;
+            color: white;
+        }
+        .overlap_box h1{
+            font-size:28px;
+            margin:43px 25px 15px;
+            letter-spacing: 0.9;
+            line-height: 1.4;
+            word-spacing: -2;
+        }
+        .overlap_box p{
+            margin: 2px 25px 20px;
+            line-height: 1.5;
+            font-weight: 300;
+        }
+        .overlap_box hr{
+            margin:auto 25px;
+        }
+        .overlap_box button{
+            background-color:rgba(52,68,101,0);
+            border:2px solid white;
+            color:white;
+            width:210px;
+            height:45px;
+            
+        }
+        #price{
+            margin-top:25px;
+            margin-bottom: 30px;
+        }
+        .three_box{
+            position:relative;
+            top:-20px;
+            background-color: white;
+            padding-top: 200px;
+            height:900px;
+            z-index: -1;
+        }
+        .three_box h1{
+            color:#283B62;
+            font-size:28px;
+        }
+        .box{
+            width:308px;
+            box-sizing: border-box;
+            float:left;
+            margin-right:10px;
+            position :relative;
+            left:205px;
+            top:30px;
+        }
+        .box h1{
+            font-size:18px;
+            color:rgba(82,114,178);
+            margin-top: 30px;
+        }
+        #box_price{
+            color:rgb(82,114,178);
+            margin-bottom: 30px;
+        }
+        #box_room{
+            color:rgb(211,191,162);
+            margin-bottom: 30px;
+        }
+        #box_text{
+            font-size:17px;
+            color:rgb(169,169,168);
+            line-height: 1.5;
+            width:280px;
+            margin-bottom: 55px;
+        }
+        .box button{
+            background-color: white;
+            color:rgb(82,114,178);
+            border:2px solid rgb(82,114,178);
+            font-size:12px;
+            width:152px;
+            height:40px;
+        }
+        .blue_boxes{
+            background-color: white;
+            padding-top:80px;
+            position:relative;
+            top:-20px;
+            height:150px;
+        }
+        .blue_boxes h1{
+            color:#283B62;
+            font-size:28px;
+        }
+        .bbox1{
+            background-color: #1E3054;
+            height:420px;
+            position:relative;
+            top:-32px;
+        }
+        .bbox1 img{
+            position:relative;
+            left:320px;
+            top:-50px;
+            float:left;
+        }
+        .bbox_text{
+            width:650px;
+            position: relative;
+            left:380px;
+            color:#596783;
+            line-height: 1.5;
+            letter-spacing:0.6;
+            font-weight: 300;
+            top:30px;
+        }
+        .bbox_text h1{
+            color:white;
+            font-size:18px;
+        }
+        #bbox_room{
+            color:rgb(211,191,162);
+
+        }
+        #sub_bbox{
+            color:#5272B2;
+        }
+        .bbox2{
+            background-color:#293B5F;
+            height:420px;
+            position:relative;
+            top:-45px;
+        }
+        .bbox2 img{
+            position: relative;
+            left:740px;
+            top:-210px;
+        }
+        .left{
+            width:340px;
+            position:relative;
+            left:350px;
+        }
+        .realtors{
+            background-color: white;
+            padding-top:95px;
+            position:relative;
+            top:-45px;
+            height:450px;
+        }
+        .realtors h1{
+            color:#283B62;
+            font-size:28px;
+        }
+        .sub_realtor h1{
+            font-size:18px;
+        }
+        .sub_realtor{
+            width:260px;
+            float:left;
+            position: relative;
+            top:20px;
+            margin-right: 50px;
+            left:250px;
+        }
+        .sub_realtor p{
+            color:#747F97;
+            line-height: 1.5;
+            letter-spacing:0.3;
+        }
+        .transparent{
+            background-color: rgba(0,0,0,0.6);
+            height:550px;
+            position: relative;
+            top:-65px;
+            box-sizing: border-box;
+        }
+        .transparent h1{
+            font-size: 28px;
+            padding-top:100px;
+            color:white;
+        }
+        .transparent p{
+            color:white;
+        }
+        .transparent h2{
+            color:#CBB492;
+            font-size: 18px;
+        }
+        .sub_transparent{
+            width:250px;
+            float:left;
+            position: relative;
+            top:60px;
+            margin-right:100px;
+            left:200px;
+        }
+        #trans{
+            position:relative;
+            top:-13px;
+        }
+        .contact{
+            background-color: white;
+            height:300px;
+            position: relative;
+            top:-87px;
+            height:900px;
+        }
+        .contact h1{
+            padding-top:100px;
+            color:#283B62;
+            font-size:28px;
+        }
+        .address h2{
+            font-size:18px;
+            color:#283B62;
+        }
+        .address p{
+            width:200px;
+            color:#A7A7A6;
+            line-height: 1.5;
+            padding-top:10px;
+        }
+        .address{
+            float:left;
+            position: relative;
+            left:200px;
+            top:40px;
+        }
+        .form1 h2{
+             font-size:18px;
+            color:#283B62;
+            width:280px;
+        }
+        #name{
+            margin-top:40px;
+        }
+        .a{
+            width:330px;
+            height:30px;
+            margin-bottom:7px;
+            border:1px solid black;
+            font-size:14px;
+            padding:2px 4px;
+        }
+        .form1{
+            float:right;
+            position:relative;
+            left:-200px;
+            top:30px;
+        }
+        .form1 textarea{
+            width:330px;
+            height:130px;
+            border:1px solid black;
+        }
+        .form1 button{
+            background-color: #283B62;
+            width:50px;
+            height:30px;
+            border:none;
+            color:white;
+            font-size:18px;
+            position:relative;
+            left:280px;
+            margin-top:7px;
+        }
+        .agent h1{
+             font-size:18px;
+            color:#283B62;
+            width:316px;
+            margin-bottom: 30px;
+        }
+        .agent p{
+            color:#A7A7A6;
+            line-height: 1.5;
+        }
+        .agent{
+            position:relative;
+            top:140px;
+            left:200px;
+        }
+        .end{
+            height:70px;
+            background-color:#CBB492;
+            position:relative;
+            top:-103px;
+        }
+        .end p{
+            color:white;
+            position:relative;
+            top:30px;
+            left:200px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navs">
+                <img id="logo" src="logo.png">
+                <ul>
+                    <div class="options">
+                <li><a href="#">HOME</a></li>
+                <li><a href="https://www.wix.com/demone2/real-estate-company#!agents/dnbd8">AGENTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="https://www.wix.com/demone2/real-estate-company#!book-online/b05io">BOOK ONLINE</a></li>
+                        </div>
+                </ul>
+            </div>
+        </div>
+        <div class="slide">
+        <img src="45.jpg" width="1349px" height="660px;">
+            <div class="phone">
+                <img src="phone1.png">
+                <p>Call us! 123-456-7890</p>
+            </div>
+            <div class="overlap_box">
+            <h1>STUNNING 6 BED HOUSE IN THE HEART OF THE CITY</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+                <hr>
+                <center><h1 id="price">$2,000,000</h1>
+                <button>ALL SALES</button></center>
+            </div>
+        </div>
+        <div class="three_box">
+            <center><h1>LATEST PROPERTIES FOR SALE</h1></center>
+            <div class="box">
+            <img src="box1.png">
+            <h1>DOWN AVENUE</h1>
+            <p id="box_price">$500,000</p>
+            <p id="box_room">4 Bedrooms</p>
+            <p id="box_text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <button>READ MORE</button>
+            </div>
+            <div class="box">
+            <img src="box2.png">
+            <h1>QUEENS WAY</h1>
+            <p id="box_price">$450,000</p>
+            <p id="box_room">3 Bedrooms</p>
+            <p id="box_text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <button>READ MORE</button>
+            </div>
+            <div class="box">
+            <img src="box3.png">
+            <h1>RANDALL CLOSE</h1>
+            <p id="box_price">$790,000</p>
+            <p id="box_room">6 Bedrooms</p>
+            <p id="box_text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <button>READ MORE</button>
+            </div>
+            </div>
+        <div class="blue_boxes">
+            <center><h1>LATEST RENTAL PROPERTIES</h1></center>
+        </div>
+        <div class="bbox1">
+            <img src="blue1.png">
+            <div class="bbox_text">
+            <h1>CHASE AVENUE</h1>
+            <p id="bbox_room">4 Bedrooms</p>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <h1 id="sub_bbox">$500/per week</h1>
+            </div>
+        </div>
+        <div class="bbox2">
+            <div class="bbox_text left">
+            <h1>KINGS CLOSE</h1>
+            <p id="bbox_room">4 Bedrooms</p>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <h1 id="sub_bbox">$450/per week</h1>
+            </div>
+            <img src="blue2.png">
+        </div>
+        <div class="realtors">
+            <center><h1>REALTORS YOU CAN TRUST</h1></center>
+            <div class="sub_realtor">
+                <center>
+            <img src="realator1.png"><br><br>
+                <h1>FREE REGISTRATION</h1>
+                <h1>NO HIDDEN FEES</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p></center>
+            </div>
+             <div class="sub_realtor">
+                <center>
+            <img src="realator2.png"><br><br>
+                <h1>PROPERTY APPRAISAL</h1>
+                <h1>FREE OF CHARGE</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p></center>
+            </div>
+             <div class="sub_realtor">
+                <center>
+            <img src="real3.png"><br><br>
+                <h1>LARGE COVERAGE</h1>
+                <h1>OFFICES IN 4 LOCATIONS</h1>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p></center>
+            </div>
+        </div>
+        <div class="transparent">
+            <center>
+        <h1>WHAT OUR CLIENTS THINK</h1>
+                <div class="sub_transparent">
+                <img src="quotes.png"><br><br>
+                    <p>"I'm a testimonial.</p>
+                    <p id="trans">Click to edit me and add text that says something nice about you and your services"</p>
+                    <h2>- Tina & James Heart</h2></div>
+                <div class="sub_transparent">
+                <img src="quotes.png"><br><br>
+                    <p>"I'm a testimonial.</p>
+                    <p id="trans">Click to edit me and add text that says something nice about you and your services"</p>
+                    <h2>- Mary van den Reich</h2></div>
+                <div class="sub_transparent">
+                <img src="quotes.png"><br><br>
+                    <p>"I'm a testimonial.</p>
+                    <p id="trans">Click to edit me and add text that says something nice about you and your services"</p>
+                    <h2>- Paul & Susan Taylor</h2></div>
+                </center>
+        </div>
+        
+        <div class="contact">
+            <center>
+            <h1>CONTACT US</h1></center>
+            <div class="address">
+            <h2>ADDRESS</h2>
+            <p>500 Terry Francois Street San Francisco, CA 94158</p>
+            <img src="map.png">
+            </div>
+            <div class="form1">
+            <h2>ALTERNATIVELY YOU CAN FILL IN THE FOLLOWING CONTACT FORM:</h2>
+            <form>
+            <input  id="name" class="a" type="text" name="namei" placeholder="Name*"  width="300px"><br>
+            <input class="a" type="email" name="emaili" placeholder="Email*"><br>
+            <input class="a" type="text" name="subi" placeholder="Subject"><br>
+                <textarea name="text" placeholder="Message"></textarea><br>
+                <button>Send</button>
+            </form>
+            </div> 
+        <div class="agent">
+        <h1>TO SPEAK WITH AN AGENT, PLEASE CALL OR EMAIL US:</h1>
+            <p>Email: info@mysite.com<br>
+            Tel: 123-456-7890<br>
+            Fax: 123-456-7890</p>
+        </div>
+        </div>
+        <div class="end">
+        <p>© 2023 by Faber & Co Real Estate. Proudly created with Wix.com</p>
+        </div>
+    </body>
+</html>
